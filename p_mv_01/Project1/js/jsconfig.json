@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target":"es6"
+  },
+  "files": [
+    "./rmmv.d.ts",
+  ],
+  "include": [
+    "./*",
+    "./plugins/*.js"
+  ],
+  "exclude": [
+    "./plugins/*"
+  ]
+}
