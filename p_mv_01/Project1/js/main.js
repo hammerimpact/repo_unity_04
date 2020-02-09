@@ -34234,8 +34234,10 @@ Window_DebugEdit.prototype.updateVariable = function() {
 // main.js
 //=============================================================================
 
+// 플러그인 js 세팅
 PluginManager.setup($plugins);
 
+// 브라우저 onload 콜백 이벤트 설정
 window.onload = function() {
     SceneManager.run(Scene_Boot);
 };
