@@ -34331,13 +34331,13 @@ Liquidize.MadeWithMV.ShowCustom = false;
 Liquidize.MadeWithMV.CustomImage = "";
 
 // Setting :  The time it takes to fade out, in frames.
-Liquidize.MadeWithMV.FadeOutTime = 120;
+Liquidize.MadeWithMV.FadeOutTime = 15;
 
 // Seting : The time it takes to fade in, in frames.
-Liquidize.MadeWithMV.FadeInTime = 120;
+Liquidize.MadeWithMV.FadeInTime = 15;
 
 // Setting : The time between fading in and out, in frames.
-Liquidize.MadeWithMV.WaitTime = 160;
+Liquidize.MadeWithMV.WaitTime = 30;
 
 //-----------------------------------------------------------------------------
 // Scene_Splash
