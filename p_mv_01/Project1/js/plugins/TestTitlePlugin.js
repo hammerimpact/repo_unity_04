@@ -12,14 +12,10 @@
         this._commandWindow.setHandler('test',  this.commandTest.bind(this));
     };
 
-    // Override
+    // New
     Scene_Title.prototype.commandTest = function() {
-        console.log("commandTest");
         this._commandWindow.close();
         SceneManager.push(Scene_TestPlugin);
-
-        /*this._commandWindow.close();
-        SceneManager.push(Scene_Options);*/
     };
 }());
 
@@ -27,7 +23,7 @@
 // Window_TitleCommand Override
 
 (function() {
-    
+
     // Override
     Window_TitleCommand.prototype.initialize = function() {
         Window_Command.prototype.initialize.call(this, 0, 0);
@@ -35,9 +31,10 @@
         this.openness = 0;
     };
 
+    // Override
     var _origin_Function_ = Window_TitleCommand.prototype.makeCommandList;
     Window_TitleCommand.prototype.makeCommandList = function() {
-        this.addCommand("TestCommand",   'test');
+        this.addCommand("테스트",   'test');
         _origin_Function_.call(this);
     };
 }());
@@ -121,7 +118,5 @@ Window_TestPluginCommand.prototype.updatePlacement = function() {
 };
 
 Window_TestPluginCommand.prototype.makeCommandList = function() {
-    this.addCommand("BACK", 'back');
+    this.addCommand("나가기", 'back');
 };
-
-
