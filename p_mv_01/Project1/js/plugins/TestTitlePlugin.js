@@ -59,10 +59,6 @@ Scene_TestPlugin.prototype.create = function() {
     this.createCommandWindow();
 };
 
-Scene_TestPlugin.prototype.start = function() {
-    Scene_Base.prototype.start.call(this);
-};
-
 Scene_TestPlugin.prototype.update = function() {
     if (!this.isBusy()) {
         this._commandWindow.open();
@@ -72,10 +68,6 @@ Scene_TestPlugin.prototype.update = function() {
 
 Scene_TestPlugin.prototype.isBusy = function() {
     return this._commandWindow.isClosing() || Scene_Base.prototype.isBusy.call(this);
-};
-
-Scene_TestPlugin.prototype.terminate = function() {
-    Scene_Base.prototype.terminate.call(this);
 };
 
 Scene_TestPlugin.prototype.createCommandWindow = function() {
